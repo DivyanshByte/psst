@@ -86,10 +86,10 @@ fn loaded_results_widget() -> impl Widget<WithCtx<SearchResults>> {
             .center(),
         Flex::column()
             .cross_axis_alignment(CrossAxisAlignment::Fill)
-            .with_child(artist_results_widget())
-            .with_child(album_results_widget())
             .with_child(track_results_widget())
+            .with_child(album_results_widget())
             .with_child(playlist_results_widget())
+            .with_child(artist_results_widget())
             .with_child(show_results_widget()),
     )
 }
